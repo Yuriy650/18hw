@@ -7,6 +7,7 @@ import Main from "./components/Main/Main";
 import Publications from "./components/Publications/Publications";
 import Photos from "./components/Photos/Photos";
 import Contacts from "./components/Contacts/Contacts";
+
 //import Contacts from "./components/Contacts/Contacts";
 
 
@@ -21,6 +22,7 @@ function App() {
                   <Route path='/publications' component={Publications} />
                   <Route path='/photos' component={Photos} />
                   <Route path='/contacts' component={Contacts} />
+
               </div>
           </div>
       </BrowserRouter>

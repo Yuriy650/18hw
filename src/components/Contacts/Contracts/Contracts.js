@@ -2,52 +2,62 @@ import React, {Component} from 'react';
 import './Contracts.css';
 import Contact from "../Contact/Contact";
 
+
 const MALE = "https://www.flaticon.com/svg/static/icons/svg/1340/1340619.svg";
 const FEMALE = "https://www.flaticon.com/svg/static/icons/svg/766/766514.svg";
 const NONE = "https://cdn.emojidex.com/emoji/seal/question.png?1417137869";
 const contacts = [{
+    userName: "Barney",
     firstName: "Барней",
     lastName: "Стинсовський",
     phone: "+380956319521",
     gender: "male",
-    imageGender: MALE
+    imageGender: MALE,
+    id: 1
 }, {
+    userName: "Robin",
     firstName: "Робін",
     lastName: "Щербатська",
     phone: "+380931460123",
     gender: "female",
-    imageGender: FEMALE
+    imageGender: FEMALE,
+    id: 2
 }, {
     firstName: "Анонімний",
     lastName: "Анонімус",
     phone: "+380666666666",
     gender: 'none',
-    imageGender: NONE
+    imageGender: NONE,
+    id: 3
 
 }, {
     firstName: "Лілія",
     lastName: "Олдровна",
     phone: "+380504691254",
     gender: "female",
-    imageGender: FEMALE
+    imageGender: FEMALE,
+    id: 4
 }, {
     firstName: "Маршен",
     lastName: "Еріксонян",
     phone: "+380739432123",
     gender: "male",
-    imageGender: MALE
+    imageGender: MALE,
+    id: 5
 }, {
     firstName: "Теодор",
     lastName: "Мотсбес",
     phone: "+380956319521",
     gender: "male",
-    imageGender: MALE
+    imageGender: MALE,
+    id: 6
 }, {
     firstName: "Брюс",
     lastName: "Мобі",
     phone: "+380956319456",
     gender: "male",
-    imageGender: MALE
+    imageGender: MALE,
+    id: 7
 }]
 let getGender = contacts;
 
@@ -124,6 +134,8 @@ class Contracts extends Component {
                 <div>
                     {[...this.state.contacts].map((item, i) => <Contact {...item} key={i}/>)}
                 </div>
+
+
             </div>
         )
     }
